@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <!--  -->
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+
+  <header>
+    <!-- shared elements -->
+    <div id="course-name">WPR</div>
+
+    <ul>
+      <li class="stack-circle">M</li>
+      <li class="stack-circle">E</li>
+      <li class="stack-circle">R</li>
+      <li class="stack-circle">N</li>
+    </ul>
+  </header>
+
+  <article>
+
+    <section id="quiz-name">
+      <h1>HTML Quiz</h1>
+    </section>
+
+    <section id="introduction">
+      <!-- screen 1: intro -->
+      <div id="author">
+        By Phạm Quang Hà
+      </div>
+      
+      <h2>The Test</h2>
+      <p>The test contains 10 questions and there is no time limit.</p>
+      <p>The test is not official, it's just a nice way to see 
+        how much you know, or don't know, about HTML.</p>
+
+      <h2>Count Your Score</h2>
+      <p>You will get 1 point for each correct answer. 
+        At the end of the Quiz, your total score will be displayed. Maximum score is 10 points.
+      </p>
+
+      <div id="box-start">
+        <h2>Start the quiz</h2>
+        <p>Good luck!</p>
+        <button id="btn-start">Start the HTML quiz ❯</button>
+      </div>
+
+    </section>
+
+    <section id="attempt-quiz" class="no-display">
+      <!-- screen 2: quiz -->
+      <div class="the-quiz"></div>
+
+      <div id="box-submit"></div>
+    </section>
+
+    <section id="review-quiz" class="no-display">
+      <!-- screen 3: review -->
+      <div class="the-selected"></div>
+
+      <div id="box-result"></div>
+    </section>
+
+    <section id="confirm">
+      <div class="confirm-box">
+        <div class="confirm-container">
+          <div class="confirm-content">Are you sure want to finish the quiz?</div>
+          <div class="confirm-button">
+            <button class="confirm-ok">OK</button>
+            <button class="confirm-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </article>
+</body>
+</html>

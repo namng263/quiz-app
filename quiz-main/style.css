@@ -1,0 +1,273 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    width: 700px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+}
+
+.stack-circle {
+    background-color: #ffee00;
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(330deg);
+}
+
+#quiz-name {
+    background-image: url(images/background.jpg);
+    height: 425px;
+    width: 700px;
+    max-width: 100%;
+    background-size: cover;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    max-width: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+#author {
+    font-size: 14px;
+    text-align: center;
+    margin: 18px 0;
+}
+
+#introduction p {
+    margin: 18px 0;
+}
+
+#box-start {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#box-start h2 {
+    margin: 18px 0;
+}
+
+#btn-start, #btn-try-again {
+    background-color: #2196F3;
+    color: white;
+    padding: 18px;
+    margin: 18px 0;
+    border: none;
+}
+
+#btn-start:hover, #btn-try-again:hover {
+    background-color: #0d8bf2;
+    cursor: pointer;
+}
+
+.question-index {
+    margin: 30px 0;
+}
+
+.option-list {
+    margin: 30px 0;
+}
+
+.option {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 1px 0;
+    display: block;
+}
+
+.option-selected {
+    background-color: #ddd;
+}
+
+input[type=radio] {
+    accent-color: #2c2c2c;
+}
+
+.option-content {
+    padding-left: 15px;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+#box-submit, #box-result {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 18px;
+    margin: 18px 0;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background-color: #46a049;
+}
+
+.correct-answer {
+    background-color: #d4edda;
+    position: relative;
+}
+
+.correct-answer:hover {
+    background-color: #d4edda;
+}
+
+.correct-answer::after {
+    content: "Correct answer";
+    background-color: rgba( 0, 0, 0, 0.2);
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top :10px;
+    right: 15px;
+}
+
+.option-correct {
+    background-color: #ddd;
+    position: relative;
+}
+
+.option-correct::after {
+    content: "Correct answer";
+    background-color: rgba( 0, 0, 0, 0.2);
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.wrong-answer {
+    background-color: #f8d7da;
+    position: relative;
+}
+
+.wrong-answer:hover {
+    background-color: #f8d7da;
+}
+
+.wrong-answer::after {
+    content: "Your answer";
+    background-color: rgba( 0, 0, 0, 0.2);
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top :10px;
+    right: 15px;
+}
+
+#box-result h2, #box-result p {
+    margin: 18px 0;
+}
+
+.num-correct {
+    font-size: 24px;
+}
+
+.percent-right {
+    font-weight: bold;
+}
+
+.confirm-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.confirm-box.open-box {
+    display: flex;
+}
+
+.confirm-container {
+    width: 300px;
+}
+
+.confirm-content {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.confirm-button {
+    background-color: rgb(242, 241, 241);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirm-ok, .confirm-cancel {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.no-display {
+    display: none;
+}
+
+/* Mobile screen */
+@media (max-width: 700px) {
+    html {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .stack-circle {
+        display: none;
+    }
+}
